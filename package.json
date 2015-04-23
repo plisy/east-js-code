@@ -1,0 +1,41 @@
+{
+  "name": "data-flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test" : "mocha 0?.*/**/**/__tests__/*.js --reporter spec --ui bdd --require ./setup.tests.js" 
+    "test1": "mocha 01.*/**/**/__tests__/*.js --reporter spec --ui bdd --require ./setup.tests.js",
+    "test2": "mocha 02.*/**/**/__tests__/*.js --reporter spec --ui bdd --require ./setup.tests.js",
+    "test3": "mocha 03.*/**/**/__tests__/*.js --reporter spec --ui bdd --require ./setup.tests.js",
+    "test4": "mocha 04.*/**/**/__tests__/*.js --reporter spec --ui bdd --require ./setup.tests.js"
+  },
+  "author": "Peter Lisy <peter.lisy@sk.ibm.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.13.1"
+  },
+  "devDependencies": {
+    "babel": "^5.1.10",
+    "babel-core": "^5.1.10",
+    "babel-eslint": "^3.0.1",
+    "babel-loader": "^5.0.0",
+    "chai": "^2.2.0",
+    "eslint": "^0.19.0",
+    "eslint-plugin-react": "^2.1.0",
+    "jsdom": "^4.4.0",
+    "mocha": "^2.2.4"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ]
+  }
+}
